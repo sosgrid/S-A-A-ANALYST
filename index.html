@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anike | Data Analyst - Bringing Data to Life</title>
+    <meta name="description" content="Sales-driven Data Analyst portfolio specializing in Excel, SQL, Power BI, and Python. Turning raw data into profit.">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+    <!-- Nav -->
+    <nav class="navbar">
+        <div class="container nav-content">
+            <div class="logo">ANIKE<span class="highlight">.DATA</span></div>
+            <div class="nav-links">
+                <a href="#about">01. About</a>
+                <a href="#expertise">02. Expertise</a>
+                <a href="#work">03. Work</a>
+                <a href="#contact">04. Contact</a>
+            </div>
+            <div class="menu-toggle"><i class="fa-solid fa-bars"></i></div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="hero" class="hero">
+        <div class="container hero-grid">
+            <div class="hero-text">
+                <span class="hero-tag">Hi, my name is Anike</span>
+                <h1 class="animate-text">Bringing <span class="highlight">Data</span><br> To Life.</h1>
+                <p class="hero-desc">
+                    I'm a sales-driven Data Analyst who transforms complex datasets into clear, actionable business strategies. 
+                    Specializing in <b>Python, Power BI, and Predictive Modeling</b> to unlock 6-figure growth for clients.
+                </p>
+                <div class="cta-group">
+                    <a href="#work" class="btn btn-primary">View Impact Reports</a>
+                    <a href="https://wa.me/2347083328962" class="btn btn-whatsapp" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i> Chat Now
+                    </a>
+                </div>
+                
+                <div class="stats-bar">
+                    <div class="stat-item">
+                        <h3 class="counter" data-target="50">0</h3>
+                        <p>Projects Delivered</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="counter" data-target="100">0</h3>
+                        <p>% Client Satisfaction</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <img src="img/dp.png" alt="Anike Data Analyst" class="profile-img">
+                    <div class="image-border"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise (Charts) -->
+    <section id="expertise">
+        <div class="container">
+            <h2 class="section-title"><span class="highlight">02.</span> Technical Arsenal</h2>
+            
+            <div class="skills-grid">
+                <div class="skills-text">
+                    <h3>The Data Stack</h3>
+                    <p>My approach combines robust engineering with aesthetic visualization. I don't just query databases; I architect data narratives that stakeholders understand instantly.</p>
+                    <ul class="skill-list">
+                        <li><i class="fa-solid fa-check highlight"></i> <b>Python & SQL</b> for ETL Pipelines</li>
+                        <li><i class="fa-solid fa-check highlight"></i> <b>Power BI & Tableau</b> for Dashboards</li>
+                        <li><i class="fa-solid fa-check highlight"></i> <b>Machine Learning</b> for Forecasting</li>
+                    </ul>
+                </div>
+                <div class="chart-container">
+                    <canvas id="skillsChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="work">
+        <div class="container">
+            <h2 class="section-title"><span class="highlight">03.</span> Impact Stories</h2>
+
+            <!-- Project 1 -->
+            <div class="project-card">
+                <div class="project-viz">
+                    <canvas id="churnChart"></canvas>
+                </div>
+                <div class="project-info">
+                    <div class="tech-stack">
+                        <span>Python</span>
+                        <span>Machine Learning</span>
+                    </div>
+                    <h3>Customer Churn Prediction</h3>
+                    <div class="project-detail">
+                        <p><b>Challenge:</b> Client was losing 15% of users quarterly with no visible pattern.</p>
+                        <p style="margin-top: 10px;"><b>Solution:</b> Built a Random Forest model to flag high-risk accounts 30 days in advance.</p>
+                    </div>
+                    <h4 style="color: var(--accent-success); margin-bottom: 20px;">Result: Saved $50k/Year in Retained Revenue</h4>
+                    <a href="#" class="btn btn-primary">View Case Study</a>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card reverse">
+                <div class="project-viz">
+                    <canvas id="salesChart"></canvas>
+                </div>
+                <div class="project-info">
+                    <div class="tech-stack">
+                        <span>Power BI</span>
+                        <span>SQL</span>
+                    </div>
+                    <h3>Inventory Optimization</h3>
+                    <div class="project-detail">
+                        <p><b>Challenge:</b> Overstocking led to $20k in dead inventory waste.</p>
+                        <p style="margin-top: 10px;"><b>Solution:</b> Automated SQL pipelines feeding a Live Inventory Dashboard.</p>
+                    </div>
+                    <h4 style="color: var(--accent-success); margin-bottom: 20px;">Result: 25% Reduction in Waste</h4>
+                    <a href="#" class="btn btn-primary">Live Dashboard</a>
+                </div>
+            </div>
+
+
+
+        <!-- Expanded Impact Stories -->
+        <div class="container container-expanded">
+            <!-- Project 3 -->
+            <div class="project-card">
+                <div class="project-viz">
+                    <canvas id="marketingChart"></canvas>
+                </div>
+                <div class="project-info">
+                    <div class="tech-stack">
+                        <span>Tableau</span>
+                        <span>Google Analytics</span>
+                    </div>
+                    <h3>Marketing ROI Analysis</h3>
+                    <div class="project-detail">
+                        <p><b>Challenge:</b> Ad spend was distributed blindly across 5 channels with no clear conversion tracking.</p>
+                        <p class="project-detail-text"><b>Solution:</b> Unified data sources into Tableau to attribute conversions accurately.</p>
+                    </div>
+                    <h4 class="result-text">Result: 40% Lower CAC (Cost Per Acquisition)</h4>
+                    <a href="#" class="btn btn-primary">View Dashboard</a>
+                </div>
+            </div>
+
+            <!-- Project 4 (Services) -->
+            <h2 class="section-title"><span class="highlight">04.</span> What I Deliver</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fa-solid fa-file-invoice-dollar highlight service-icon"></i>
+                    <h3 class="service-title">Financial Modeling</h3>
+                    <p class="service-desc">Revenue forecasting, cash flow analysis, and budget optimization models built in Excel & Python.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fa-solid fa-chart-pie highlight service-icon"></i>
+                    <h3 class="service-title">Dashboarding</h3>
+                    <p class="service-desc">Interactive, self-service dashboards in Power BI that allow stakeholders to drill down into KPIs.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fa-solid fa-robot highlight service-icon"></i>
+                    <h3 class="service-title">Automation</h3>
+                    <p class="service-desc">Replacing manual reporting tasks with automated SQL & Python scripts, saving 20+ hours/week.</p>
+                </div>
+            </div>
+
+            <!-- Process Section -->
+            <h2 class="section-title"><span class="highlight">05.</span> My Workflow</h2>
+            <div class="workflow-container">
+                <div class="workflow-step">
+                    <div class="step-number step-1">1</div>
+                    <div class="step-content">
+                        <h4>Discovery & Audit</h4>
+                        <p>I dive deep into your existing data infrastructure to identify gaps and dirty data issues.</p>
+                    </div>
+                </div>
+                <div class="workflow-step">
+                    <div class="step-number step-2">2</div>
+                    <div class="step-content">
+                        <h4>Strategy & Cleaning</h4>
+                        <p>Designing the ETL pipeline and cleaning datasets to ensure 99.9% accuracy before analysis.</p>
+                    </div>
+                </div>
+                <div class="workflow-step">
+                    <div class="step-number step-3">3</div>
+                    <div class="step-content">
+                        <h4>Visualization & Delivery</h4>
+                        <p>Building the final dashboards and presenting insights that directly answer key business questions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title"><span class="highlight">06.</span> Client Words</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                    <p class="quote-text">"Anike found a leak in our marketing budget that was costing us $4k a month. The dashboard he built paid for itself in week one."</p>
+                    <div class="client-info">
+                        <div class="client-avatar"></div>
+                        <div>
+                            <h5 class="client-name">Sarah Jenkins</h5>
+                            <span class="client-role">CMO, FinTech Startip</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                    <p class="quote-text">"We were drowning in Excel sheets. Anike automated the whole process with Python. What took us 2 days now takes 5 minutes."</p>
+                    <div class="client-info">
+                        <div class="client-avatar"></div>
+                        <div>
+                            <h5 class="client-name">David Okon</h5>
+                            <span class="client-role">Operations Lead, Logistics Co.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" style="text-align: center;">
+        <div class="container contact-box">
+            <span class="hero-tag">07. What's Next?</span>
+            <h2 style="font-size: 3rem; margin-bottom: 20px; color: var(--text-main);">Get in Touch</h2>
+            <p style="color: var(--text-muted); margin-bottom: 40px; font-size: 1.1rem;">
+                I'm currently available for freelance projects and consulting. 
+                Whether you have a question or need a data strategy session, 
+                my inbox is always open.
+            </p>
+            <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                <a href="https://wa.me/2347083328962" class="btn btn-whatsapp" style="font-size: 1.1rem; padding: 15px 35px;">
+                    <i class="fa-brands fa-whatsapp"></i> +234 708 332 8962
+                </a>
+                <a href="mailto:salamiadeshewa19@gmail.com" class="btn btn-primary">salamiadeshewa19@gmail.com</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="text-align: center; padding: 40px; color: var(--text-muted); font-size: 0.9rem;">
+        <p>Designed & Built by Anike | Bringing Data to Life</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
