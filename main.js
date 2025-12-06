@@ -173,6 +173,7 @@ const initMarketingChart = () => {
 };
 
 // --- 4. Intersection Observer for Lazy Loading Charts ---
+// --- 4. Intersection Observer for Lazy Loading Charts ---
 const chartObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -195,7 +196,8 @@ const navItems = document.querySelectorAll('.nav-links a');
 
 let isMenuOpen = false;
 
-menuToggle.addEventListener('click', () => {
+// Reusable function to manage menu state
+const toggleMenu = () => {
     isMenuOpen = !isMenuOpen;
     const icon = menuToggle.querySelector('i');
     
@@ -227,7 +229,20 @@ menuToggle.addEventListener('click', () => {
             duration: 0.3,
             stagger: 0.05,
             ease: 'power2.in',
-            onComplete: () => navLinks.classList.remove('active')
+            onComplete: () => {
+                navLinks.classList.remove('active');
+                // Ensure items reset opacity for next time
+                gsap.set(navItems, { clearProps: "all" });
+            }
         });
     }
+};
+
+menuToggle.addEventListener('click', toggleMenu);
+
+// Close menu when a link is clicked
+navItems.forEach(item => {
+    item.addEventListener('click', () => {
+        if (isMenuOpen) toggleMenu();
+    });
 });

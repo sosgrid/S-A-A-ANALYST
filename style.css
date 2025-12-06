@@ -150,6 +150,23 @@ h1, h2, h3, h4 {
         transition: opacity 0.3s ease, visibility 0.3s ease;
     }
 
+    /* Mobile Link Styles */
+    .nav-links a {
+        font-size: 2rem;
+        color: var(--text-main);
+        text-decoration: none;
+        font-family: var(--font-heading);
+        font-weight: 700;
+        margin-bottom: 30px;
+        opacity: 0; /* Hidden initially for stagger */
+        transform: translateY(20px); 
+    }
+
+    .nav-links a:hover {
+        color: var(--accent-primary);
+        transform: scale(1.1);
+    }
+
     .nav-links.active {
         visibility: visible;
         opacity: 1;
@@ -345,8 +362,23 @@ section {
     overflow: hidden;
 }
 
+/* --- Contact --- */
+.contact-box {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
 /* --- Mobile Responsive (Updated for Deepest Mobile) --- */
 @media (max-width: 968px) {
+    .hero-grid { 
+        grid-template-columns: 1fr; 
+        text-align: center;
+    }
+    .hero-desc { margin: 0 auto 40px; }
+    .image-wrapper { margin: 40px auto; width: 70%; max-width: 350px; }
+    .cta-group { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+    
     .skills-grid { grid-template-columns: 1fr; }
     .project-card, .project-card.reverse { grid-template-columns: 1fr; }
 }
